@@ -2,13 +2,13 @@ public class thirdLargestElement{
     
     public static void thirdLargestEle(int[] arr, int n){
         
-        int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE, third = Integer.MIN_VALUE;
+        int first = arr[0], second = Integer.MIN_VALUE, third = Integer.MIN_VALUE;
         
         if(n < 3){
             System.out.println("Invalid Array!");
         }else{
         
-            for(int i=0; i<n; i++){
+            for(int i=1; i<n; i++){
                 if(arr[i] > first){
                     third = second;
                     second = first;
