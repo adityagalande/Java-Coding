@@ -1,3 +1,7 @@
+// Any message must start with (.)
+// Any message must ends with (-)
+// Every dot(.) must have corresponding dash(-) after it to close it.
+
 public class morseCodeMsg{
     
     public static int morseCodeMsg(String[] msg, int n){
@@ -30,7 +34,7 @@ public class morseCodeMsg{
     } 
 
      public static void main(String []args){
-        String[] msg = {".-.-.-.-", "...---.-", "..--.-.", ".-"};
+        String[] msg = {".-.-.-.-", "...---.-", "..--.-", "..-"};
         int n = msg.length;
         System.out.println(morseCodeMsg(msg, n));
      }
